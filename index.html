@@ -32,7 +32,7 @@
 <a name="cv-branding" class="anchor" href="#cv-branding"><span class="octicon octicon-link"></span></a>CV Branding</h1>
 
 <h2>
-<a name="api-get" class="anchor" href="#api-get"><span class="octicon octicon-link"></span></a>API <em>(get)</em>
+<a name="api-get" class="anchor" href="#api-get"><span class="octicon octicon-link"></span></a>API <em>(GET)</em>
 </h2>
 
 <p><strong>Parameters:</strong></p>
@@ -83,7 +83,7 @@ Base URI:</p>
 
 <p>Full Request (with all query params)</p>
 
-<pre><code>http://assure-quality.1on1.com/call_brand?leadid=162996924&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=168932648329920&amp;origin_tracking_code=&amp;audit_id=DAA-0B5F-F5FDFG-324C-4437824678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=3333333&amp;
+<pre><code>http://assure-quality.1on1.com/call_brand?leadid=162985476329496924&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=1689326543548329920&amp;origin_tracking_code=&amp;audit_id=DtreAA-0B5F-F5FreDFG-324C-4437fged824678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=3333333&amp;
 </code></pre>
 
 <p><strong>Example Response:</strong></p>
@@ -104,7 +104,20 @@ Base URI:</p>
 
 <p><a href="http://assure-quality.1on1.com/call_brand?no_prizm=true&amp;no_leadid=true&amp;leadid=162996924&amp;status=Q&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=168932648329920&amp;origin_tracking_code=&amp;audit_id=DAA-0B5F-F5FDFG-324C-4437824678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=61729">Try Call Branding API</a></p>
 
-<h2>
+<h3>
+<a name="testing-and-other-options" class="anchor" href="#testing-and-other-options"><span class="octicon octicon-link"></span></a>Testing and other options</h3>
+
+<p>The API allows rpobust testing on our part and for that I have created a number of API options to allow us to test both performance and quality. If these options are used One On One cannot support the use of the results as valid.</p>
+
+<p>There are two tiers of testing. For basic API integration pass </p>
+
+<ul>
+<li><code>no_prizm=true</code></li>
+</ul><p>If you need to test running Prizm results (i.e., ordering the list of valid branded contracts in terms of Priority), then pass</p>
+
+<ul>
+<li><code>no_prospector=true</code></li>
+</ul><h2>
 <a name="other-information" class="anchor" href="#other-information"><span class="octicon octicon-link"></span></a>Other Information</h2>
 
 <h3>
@@ -115,7 +128,7 @@ Base URI:</p>
 <div class="highlight"><pre><span class="p">{</span>
   <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[</span>
     <span class="p">{</span>
-      <span class="nt">"request_url"</span><span class="p">:</span> <span class="s2">"VCID-PRIZM-PROSPECTOR:: http://assure-quality.1on1.com/call_brand?leadid=162996924&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=168932648329920&amp;origin_tracking_code=&amp;audit_id=DAA-0B5F-F5FDFG-324C-4437824678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=3333333&amp;"</span><span class="p">,</span>
+      <span class="nt">"request_url"</span><span class="p">:</span> <span class="s2">"VCID-PRIZM-PROSPECTOR:: http://assure-quality.1on1.com/call_brand?leadid=162954352543296924&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=168932654325448329920&amp;origin_tracking_code=&amp;audit_id=D543AA-054fB5F-F5geFDFG-324C-44378rewt543224678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=3333333&amp;"</span><span class="p">,</span>
     <span class="nt">"response_total"</span><span class="p">:</span> <span class="mf">11.085868</span><span class="p">,</span>
     <span class="nt">"response_qualify"</span><span class="p">:</span> <span class="s2">"VCID-PRIZM-PROSPECTOR:: 7.798527"</span>
     <span class="p">}</span>
@@ -124,9 +137,9 @@ Base URI:</p>
 </pre></div>
 
 <h3>
-<a name="testing-and-other-options" class="anchor" href="#testing-and-other-options"><span class="octicon octicon-link"></span></a>Testing and other options</h3>
+<a name="threaded-and-asynchronous" class="anchor" href="#threaded-and-asynchronous"><span class="octicon octicon-link"></span></a>Threaded and Asynchronous</h3>
 
-<p>The API allows rpobust testing on our part and for that I have created a number of API options to allow us to test both performance and quality. If these options are used One On One cannot support the use of the results as valid.</p>
+<p>There exist params for the API to run queries in either <code>threaded</code> or <code>asynchronous</code> mode, but since the API manages this performance issue natively there is no need for API users to employ these strategies. That is, extra modes of running for the API are for developers of the API.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/one-on-one">one-on-one</a></p>
