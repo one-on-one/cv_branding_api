@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Cv branding api by one-on-one</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Cv branding api</h1>
+        <p>Documentation for CV Branding Public Facing API</p>
+
+        <p class="view"><a href="https://github.com/one-on-one/cv_branding_api">View the Project on GitHub <small>one-on-one/cv_branding_api</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/one-on-one/cv_branding_api/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/one-on-one/cv_branding_api/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/one-on-one/cv_branding_api">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="cv-branding" class="anchor" href="#cv-branding"><span class="octicon octicon-link"></span></a>CV Branding</h1>
+
+<h2>
+<a name="api-get" class="anchor" href="#api-get"><span class="octicon octicon-link"></span></a>API <em>(get)</em>
+</h2>
+
+<p><strong>Parameters:</strong></p>
+
+<p>All query parameters typically passed to the call intake are expected for this API; most important are:</p>
+
+<ul>
+<li>leadid</li>
+<li>personal data (first_name, last_name, etc...)</li>
+<li>school or program specific data (program of interest, current education level, etc...)</li>
+</ul><p><strong>Example Requests:</strong>
+Base URI:</p>
+
+<pre><code>http://assure-quality.1on1.com/call_brand?
+</code></pre>
+
+<p>Base query params:</p>
+
+<pre><code>leadid=162996924
+&amp;program=TSC
+&amp;program_2=
+&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI
+&amp;Email=SHRAMRAMPLE@GMAIL.COM
+&amp;email_1=SHRAMRAMPLE@GMAIL.COM
+&amp;Street=1509%20MORDOR%20ST
+&amp;address_1=1509%20MORDOR%20ST
+&amp;City=GRUMBLECAKES
+&amp;State=UT&amp;Zip=23222
+&amp;Home_Phone=1234567891
+&amp;Phone2=
+&amp;Phone3=
+&amp;first_name=GUBSUMPLER
+&amp;last_name=SHRAMRAMPLE
+&amp;originator_id=168932648329920
+&amp;origin_tracking_code=
+&amp;audit_id=DAA-0B5F-F5FDFG-324C-4437824678
+&amp;desireddegree=N
+&amp;hsgrad=2009
+&amp;birthyear=1990
+&amp;gender=M
+&amp;currentedlevel=HighSchool
+&amp;desiredstart=0
+&amp;military=N
+&amp;edu_currently_enrolled_elsewhere=N
+&amp;campusinterest=N
+&amp;repcode=61729
+
+</code></pre>
+
+<p>Full Request (with all query params)</p>
+
+<pre><code>http://assure-quality.1on1.com/call_brand?leadid=162996924&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=168932648329920&amp;origin_tracking_code=&amp;audit_id=DAA-0B5F-F5FDFG-324C-4437824678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=3333333&amp;
+</code></pre>
+
+<p><strong>Example Response:</strong></p>
+
+<div class="highlight"><pre><span class="p">{</span><span class="nt">"call_brand"</span><span class="p">:[</span>
+  <span class="p">[</span>
+    <span class="p">[</span>
+      <span class="mi">32</span><span class="p">,</span>
+      <span class="s2">"American InterContinental University CV 0.1"</span><span class="p">],</span>
+    <span class="p">[</span>
+      <span class="mi">1044</span><span class="p">,</span>
+      <span class="s2">"Colorado Technical University CV 0.1 HS/GED"</span><span class="p">]</span>
+    <span class="p">],</span>
+    <span class="mi">2</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><a href="http://assure-quality.1on1.com/call_brand?no_prizm=true&amp;no_leadid=true&amp;leadid=162996924&amp;status=Q&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=168932648329920&amp;origin_tracking_code=&amp;audit_id=DAA-0B5F-F5FDFG-324C-4437824678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=61729">Try Call Branding API</a></p>
+
+<h2>
+<a name="other-information" class="anchor" href="#other-information"><span class="octicon octicon-link"></span></a>Other Information</h2>
+
+<h3>
+<a name="metadata-fields" class="anchor" href="#metadata-fields"><span class="octicon octicon-link"></span></a>MetaData fields</h3>
+
+<p>There are a number of data points collected to provide insight into how the API is performing, as well as providing robust feedback to users of the API and logging. Currenlty the only MetaData field provided for the user is <code>response_total</code>, which is measured in number of seconds for a full request. An example of the standared MetaData set that gets logged:</p>
+
+<div class="highlight"><pre><span class="p">{</span>
+  <span class="nt">"metadata"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">"request_url"</span><span class="p">:</span> <span class="s2">"VCID-PRIZM-PROSPECTOR:: http://assure-quality.1on1.com/call_brand?leadid=162996924&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=168932648329920&amp;origin_tracking_code=&amp;audit_id=DAA-0B5F-F5FDFG-324C-4437824678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=3333333&amp;"</span><span class="p">,</span>
+    <span class="nt">"response_total"</span><span class="p">:</span> <span class="mf">11.085868</span><span class="p">,</span>
+    <span class="nt">"response_qualify"</span><span class="p">:</span> <span class="s2">"VCID-PRIZM-PROSPECTOR:: 7.798527"</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3>
+<a name="testing-and-other-options" class="anchor" href="#testing-and-other-options"><span class="octicon octicon-link"></span></a>Testing and other options</h3>
+
+<p>The API allows rpobust testing on our part and for that I have created a number of API options to allow us to test both performance and quality. If these options are used One On One cannot support the use of the results as valid.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/one-on-one">one-on-one</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
