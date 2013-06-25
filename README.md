@@ -1,6 +1,6 @@
 # CV Branding
 
-## API *(get)*
+## API *(GET)*
 
 **Parameters:**
 
