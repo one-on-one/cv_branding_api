@@ -55,19 +55,19 @@ http://assure-quality.1on1.com/call_brand?leadid=162985476329496924&program=TSC&
 ```
 
 **Example Response:**
-
-
+API return JSON responses:
 ```json
-{"call_brand":[
-  [
-    [
-      32,
-      "American InterContinental University CV 0.1"],
-    [
-      1044,
-      "Colorado Technical University CV 0.1 HS/GED"]
-    ],
-    2
+{"response_total":3.263088,"multiplier":2,"contract":[32,1044]}
+```
+
+Reading through a JSON formatter:
+```json
+{
+  response_total: 3.263088,
+  multiplier: 2,
+  contract: [
+    32,
+    1044
   ]
 }
 ```
@@ -99,7 +99,3 @@ There are a number of data points collected to provide insight into how the API 
   ]
 }
 ```
-
-### Threaded and Asynchronous
-There exist params for the API to run queries in either `threaded` or `asynchronous` mode, but since the API manages this performance issue natively there is no need for API users to employ these strategies. That is, extra modes of running for the API are for developers of the API.
-
