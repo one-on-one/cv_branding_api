@@ -86,19 +86,21 @@ Base URI:</p>
 <pre><code>http://assure-quality.1on1.com/call_brand?leadid=162985476329496924&amp;program=TSC&amp;program_2=&amp;vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&amp;Email=SHRAMRAMPLE@GMAIL.COM&amp;email_1=SHRAMRAMPLE@GMAIL.COM&amp;Street=1509%20MORDOR%20ST&amp;address_1=1509%20MORDOR%20ST&amp;City=GRUMBLECAKES&amp;State=UT&amp;Zip=23222&amp;Home_Phone=1234567891&amp;Phone2=&amp;Phone3=&amp;first_name=GUBSUMPLER&amp;last_name=SHRAMRAMPLE&amp;originator_id=1689326543548329920&amp;origin_tracking_code=&amp;audit_id=DtreAA-0B5F-F5FreDFG-324C-4437fged824678&amp;desireddegree=N&amp;hsgrad=2009&amp;birthyear=1990&amp;gender=M&amp;currentedlevel=HighSchool&amp;desiredstart=0&amp;military=N&amp;edu_currently_enrolled_elsewhere=N&amp;campusinterest=N&amp;repcode=3333333&amp;
 </code></pre>
 
-<p><strong>Example Response:</strong></p>
+<p><strong>Example Response:</strong>
+API return JSON responses:</p>
 
-<div class="highlight"><pre><span class="p">{</span><span class="nt">"call_brand"</span><span class="p">:[</span>
-  <span class="p">[</span>
-    <span class="p">[</span>
-      <span class="mi">32</span><span class="p">,</span>
-      <span class="s2">"American InterContinental University CV 0.1"</span><span class="p">],</span>
-    <span class="p">[</span>
-      <span class="mi">1044</span><span class="p">,</span>
-      <span class="s2">"Colorado Technical University CV 0.1 HS/GED"</span><span class="p">]</span>
-    <span class="p">],</span>
-    <span class="mi">2</span>
-  <span class="p">]</span>
+<div class="highlight"><pre><span class="p">{</span><span class="nt">"response_total"</span><span class="p">:</span><span class="mf">3.263088</span><span class="p">,</span><span class="nt">"multiplier"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="nt">"contract"</span><span class="p">:[</span><span class="mi">32</span><span class="p">,</span><span class="mi">1044</span><span class="p">]}</span>
+</pre></div>
+
+<p>Reading through a JSON formatter:</p>
+
+<div class="highlight"><pre><span class="p">{</span>
+  <span class="err">response_total:</span> <span class="err">3.263088,</span>
+  <span class="err">multiplier:</span> <span class="err">2,</span>
+  <span class="err">contract:</span> <span class="err">[</span>
+    <span class="err">32,</span>
+    <span class="err">1044</span>
+  <span class="err">]</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -135,11 +137,6 @@ Base URI:</p>
   <span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
-
-<h3>
-<a name="threaded-and-asynchronous" class="anchor" href="#threaded-and-asynchronous"><span class="octicon octicon-link"></span></a>Threaded and Asynchronous</h3>
-
-<p>There exist params for the API to run queries in either <code>threaded</code> or <code>asynchronous</code> mode, but since the API manages this performance issue natively there is no need for API users to employ these strategies. That is, extra modes of running for the API are for developers of the API.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/one-on-one">one-on-one</a></p>
