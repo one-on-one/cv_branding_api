@@ -83,9 +83,9 @@ There are a number of data points collected to provide insight into how the API 
 {
   "metadata": [
     {
-      "request_url": "VCID-PRIZM-PROSPECTOR:: http://assure-quality.1on1.com/call_brand?leadid=162954352543296924&program=TSC&program_2=&vendorcode=OV.EDU_C.NICCV_S.GENX_R.INC_M.CI&Email=SHRAMRAMPLE@GMAIL.COM&email_1=SHRAMRAMPLE@GMAIL.COM&Street=1509%20MORDOR%20ST&address_1=1509%20MORDOR%20ST&City=GRUMBLECAKES&State=UT&Zip=23222&Home_Phone=1234567891&Phone2=&Phone3=&first_name=GUBSUMPLER&last_name=SHRAMRAMPLE&originator_id=168932654325448329920&origin_tracking_code=&audit_id=D543AA-054fB5F-F5geFDFG-324C-44378rewt543224678&desireddegree=N&hsgrad=2009&birthyear=1990&gender=M&currentedlevel=HighSchool&desiredstart=0&military=N&edu_currently_enrolled_elsewhere=N&campusinterest=N&repcode=3333333&",
-    "response_total": 11.085868,
-    "response_qualify": "VCID-PRIZM-PROSPECTOR:: 7.798527"
+      "request_url": "VCID-PRIZM-PROSPECTOR:: http://assure-quality.1on1.com/call_brand?....",
+    "response_total": 2.085868,
+    "response_qualify": "VCID-PRIZM-PROSPECTOR:: 1.098527"
     }
   ]
 }
